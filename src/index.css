@@ -1,13 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
+  width: 100%; 
+  height: 100%; 
+  margin: 0; 
+  padding: 0; 
+  overflow-x: hidden; 
+  box-sizing: border-box; 
+  background: linear-gradient(to bottom, #E6E6FA, #FFFFFF) !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a{
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+a.active{
+  color: white;
+  background-color: orange;
+}
+/* Track */
+::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkgrey; /* Color of the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(73, 71, 71); /* Color of the scrollbar handle when hovered */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #888; /* Color of the scrollbar track */
+}
+
+/* Track on hover */
+::-webkit-scrollbar-track:hover {
+  background: #ddd; /* Color of the scrollbar track when hovered */
+}
+
+/* Corner */
+::-webkit-scrollbar-corner {
+  background: transparent; /* Color of the scrollbar corner */
 }

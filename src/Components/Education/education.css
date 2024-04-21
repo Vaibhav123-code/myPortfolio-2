@@ -1,0 +1,13 @@
+.education-container {
+    width: 65%;
+    margin: auto;
+    margin-top: 2rem !important;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid grey;
+    background-color: #F5F5F5;
+  }
+ p{
+  font-weight: 500;
+  color: darkgrey;
+ }

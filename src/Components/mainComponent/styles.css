@@ -1,0 +1,150 @@
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 70%;
+    height: 60vh;
+    margin: auto;
+}
+.heading-left h1{
+    margin: 0;
+    font-size: 45px;
+}
+.heading-left {
+    width: 50%;
+    margin-right: 0;
+}
+.img-icon {
+    margin-left: 0;
+}
+.info {
+    color: grey;
+    margin: 0;
+    width: 80%;
+}
+ img {
+    width: 170px;
+    height: auto;
+}
+
+.tech-stack {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 60%;
+     margin: auto;
+     gap: 2rem;
+}
+.p-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: 600;
+    color: rgb(55, 50, 50);
+    gap: 2px;
+}
+.link{
+    cursor: pointer;
+    padding: 3px;
+}
+.link:hover {
+    transform: scale(1.4);
+   color: blue;
+}
+.layer-icon{
+    font-size: 30px;
+}
+.svg-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.svg-icon svg {
+    width: 30px; 
+    height: auto; 
+}
+@media only screen and (max-width: 400px) {
+    .container{
+       flex-direction: column;
+       width: 100%;
+       height: auto;
+       justify-content: flex-start;
+       overflow: hidden;
+       margin-top: 2rem;
+       margin-bottom: 1rem;
+    }
+    .heading-left {
+        width: 100%;
+        text-align: center;
+    }
+    .heading-left h1{
+        font-size: 30px;
+    }
+    .info {
+        margin: auto;
+    }
+    .tech-stack {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+}
+@media only screen and (max-width: 1350px) {
+    .heading1,
+    .heading2 {
+      font-size: 5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 1050px) {
+    .heading1,
+    .heading2 {
+      font-size: 4rem;
+    }
+  
+    
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .heading1,
+    .heading2 {
+      font-size: 2rem;
+    }
+    .main-flex {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .heading1,
+    .heading2,
+    .info-text {
+      text-align: center;
+    }
+  
+    .info-text {
+      font-size: 0.8rem;
+    }
+  
+    .btn-flex {
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .gradient-div {
+      margin-top: 3rem;
+      margin-right: auto;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .gradient,
+    .iphone {
+      left: 0px;
+    }
+  
+    .iphone {
+      left: -30px;
+    }
+  }

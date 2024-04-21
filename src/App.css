@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 98%;
+    margin: auto;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding-bottom: 2rem;  
+}
+ /* project page css */
+ .project-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+.project-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007BFF;
+    font-family: 'Georgia', serif;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section-heading {
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-family: 'Verdana', sans-serif;
+    text-decoration: underline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.feature-list {
+    list-style-type: none;
+    padding: 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.feature-list li {
+    margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.description {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    color: black;
+    font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tech-s {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.tech-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    margin-left: 2rem;
+}
+.tech-item {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1); 
+    /* border: 1px solid grey; */
+    padding: 0.2rem;
+}
+.tech-img {
+    width: 70px ;
+    height: 70px;
+    border: 1px solid grey;
+    border-radius: 0.7rem;
+    padding: 1rem;
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.demo-button, .source-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.demo-button:hover, .source-button:hover {
+    background-color: #0056b3;
 }
