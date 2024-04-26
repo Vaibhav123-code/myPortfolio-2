@@ -12,7 +12,7 @@ function Home() {
     transition={{ delay: 0.5, duration: 1 }} >
         <Header />
         <MainComponent />
-        <Footer />
+        {/* <Footer /> */}
     </motion.div>
   )
 }

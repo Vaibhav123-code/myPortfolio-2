@@ -3,7 +3,8 @@ import { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
 import { Snackbar } from '@mui/material';
 import './styles.css'; 
-
+import Footer from '../footer';
+import { motion } from 'framer-motion';
 function ContactPage() {
   const [open, setOpen] = useState(false);
   const form = useRef();
@@ -22,7 +23,11 @@ function ContactPage() {
   return (
     <div>
       <div className="container-contact">
-        <div className="wrapper">
+        <motion.div className="wrapper"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.6}}
+        >
           <div className="title">Contact</div>
           <div className="desc">Feel free to reach out to me for any questions or opportunities!</div>
 
@@ -41,8 +46,9 @@ function ContactPage() {
             message="Email sent successfully!"
             severity="success"
           />
-        </div>
+        </motion.div>
       </div>
+      <Footer />
     </div>
   )
 }

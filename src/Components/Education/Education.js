@@ -5,11 +5,16 @@ import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
+import { motion } from 'framer-motion';
 import './education.css'
 
 export default function Education() {
   return (
-    <div className='education-container'>
+    <motion.div className='education-container'
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5, delay: 0.5}}
+    >
       <h2>Education</h2>
       <Timeline position="alternate-reverse"  >
         <TimelineItem >
@@ -64,6 +69,6 @@ export default function Education() {
           </TimelineContent>
         </TimelineItem>
       </Timeline>
-    </div>
+    </motion.div>
   );
 }

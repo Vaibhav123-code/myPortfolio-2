@@ -3,8 +3,9 @@ import './resume.css'
 
 function Resume() {
   return (
-    <div>
-        <a href="https://lime-ailyn-48.tiiny.site/" download="vaibhav123.pdf" target="_blank">
+    <div
+    >
+        <a href="https://drive.google.com/file/d/19zyybFtSTmGlioU9YzpyxdlmLOlxax8o/view?usp=sharing"  target="_blank">
         <button className='resume-btn'>Resume</button>
          </a>
 

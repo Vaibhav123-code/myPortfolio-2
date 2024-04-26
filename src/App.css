@@ -7,7 +7,7 @@
     margin: auto;
     gap: 2rem;
     margin-top: 3rem;
-    padding-bottom: 2rem;  
+    padding-bottom: 2rem; 
 }
  /* project page css */
  .project-container {
@@ -98,4 +98,9 @@
 
 .demo-button:hover, .source-button:hover {
     background-color: #0056b3;
+}
+@media only screen and (max-width: 500px) {
+    .tech-s {
+        flex-wrap: wrap;
+    }
 }

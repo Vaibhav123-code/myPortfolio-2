@@ -35,3 +35,12 @@
   color: #666; 
   font-weight: 400;
 }
+@media only screen and (max-width: 500px) {
+  .card {
+    width: 300px;
+    height: auto;
+    border: 2px solid #ccc; 
+    border-radius: 1rem !important;
+    padding: 1.5rem;
+  }
+}

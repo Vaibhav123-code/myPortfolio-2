@@ -10,9 +10,10 @@ function Projects() {
   return (
     <div>
       <Header />
+
       <div className='card-container'>
-      { projects && projects.map(project => (
-         <ProjectCard key={project.id} project={project} />
+      { projects && projects.map((project,i)=> (
+         <ProjectCard key={i} project={project} delay={(i % 4) * 0.2}/>
       ))}
      
        </div>

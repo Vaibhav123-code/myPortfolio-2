@@ -4,11 +4,16 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
-import './styles.css'
+import './styles.css';
+import {motion} from 'framer-motion';
 
-export default function ProjectCard({project}) {
+export default function ProjectCard({project, delay}) {
   return (
-   <div className='card-wrapper'>
+   <motion.div className='card-wrapper'
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: delay }}
+   >
     <a href={`/projects/${project.title}`}>
     <Card className='card'>
       <CardMedia
@@ -30,6 +35,6 @@ export default function ProjectCard({project}) {
       </CardActions>
     </Card>
     </a>
-    </div>
+    </motion.div>
   );
 }

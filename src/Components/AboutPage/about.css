@@ -31,4 +31,43 @@
   display: flex;
   gap: 2rem;
   font-size: larger;
+  flex-wrap: wrap;
 } 
+.certificate {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #ff6b6b, #4ecdc4); /* Two-color gradient */
+    color: #fff; /* Text color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+  .certificate:hover {
+    transform: translateY(-2px); /* Move button slightly upwards */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Adjusted shadow effect */
+  }
+
+@media only screen and (max-width: 500px) {
+  .about-container, .aboutme, .skill-container {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 10px;
+  }
+
+  .about-heading {
+    margin-left: 15px; 
+  }
+.aboutme{
+   font-weight: 400;
+   font-size: large;
+   padding: 1.2rem;
+}
+  .skill-container .skill-list {
+    gap: 1rem; /* Reduce gap between skills */
+  }
+}
